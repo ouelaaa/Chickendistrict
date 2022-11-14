@@ -1,0 +1,349 @@
+* {
+    transition: all 0.5s;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+
+body {
+    /*font-family: "Times New Roman", Georgia, Serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: #f1f1f1 !important; */
+    background-image: url("../images/bricks.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+.barnav {
+    background: linear-gradient(to right, #ff8100, orange) !important;
+    /*background: linear-gradient(to right, #3c3939, #565656);*/
+
+}
+
+.barnav,
+.barnav>div,
+header,
+header>img {
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+header {
+    position: relative !important;
+    width: 100% !important;
+}
+
+header>img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.logo {
+    width: 10% !important;
+    height: auto !important;
+    transform: scale(1.8) !important;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative !important;
+    /*
+    display: block !important;
+    position: absolute !important;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    width: 10% !important;
+    height: auto !important;
+    */
+    /*
+    position: static !important;
+    margin-top: 25% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 30% !important;
+    border-radius: 20px !important;
+    */
+    /*
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    width: 30% !important;
+    */
+}
+
+.logo,
+.nos_button {
+    display: inline-block !important;
+
+}
+
+a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nos_button>a,
+.nos_button2>a {
+    color: white !important;
+
+}
+
+.nos_button>a:hover,
+.nos_button2>a:hover {
+    /*background: linear-gradient(to right, rgb(226, 82, 83), rgb(246, 231, 94)) !important;*/
+    background-color: rgb(226, 82, 83) !important;
+    color: white !important;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0%;
+
+}
+
+
+
+#section07 a span {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 24px;
+    height: 24px;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+#section07 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#section07 a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+
+#section07 a span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*
+header>.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+header>.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+*/
+
+.card {
+    background-color: white !important;
+    padding: 0 !important;
+}
+
+.card>* {
+    padding: 0 !important;
+
+}
+
+.card>.text {
+    padding: 2% !important;
+}
+
+#about,
+#ou_sommes_nous {
+    border-bottom-left-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+}
+
+#menu {
+    border-bottom-right-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+
+}
+
+
+a:hover {
+
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.w3-top {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageOne,
+.imageThree {
+    /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.imageTwo {
+    /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+span {
+    border-radius: 20px !important;
+}
+
+span,
+span:hover {
+    cursor: pointer !important;
+}
+
+span:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.Bucket>*,
+.Sandwich>*,
+.Carte>*,
+.Salade>* {
+    display: none !important;
+}
+
+.footer {
+    position: relative !important;
+    width: 100% !important;
+    background: linear-gradient(to right, #3c3939, #565656) !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/*
+@media (min-width: 700px) {
+
+    .li_fermer,
+    #fermer,
+    .fermer {
+        display: none !important;
+    }
+}
+*/
+
+@media (max-width: 1250px) {
+    .logo {
+        transform: scale(1.5) !important;
+        border-radius: 100px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 25% !important;
+        transform: scale(2) !important;
+        border-radius: 100px !important;
+    }
+
+    .nos_button>a {
+        display: none !important;
+    }
+
+    header,
+    header>* {
+        display: none !important;
+    }
+
+    .container {
+        display: block !important;
+    }
+
+    .picture,
+    .picture>img {
+        display: none !important;
+    }
+}
+
+/*
+@media (max-width: 700px) {
+    .logo {
+        width: 25% !important;
+        transform: scale(2) !important;
+        border-radius: 100px !important;
+    }
+*/
+/*
+    .container {
+        display: block !important;
+    }
+
+    .nos_button>a {
+        display: none !important;
+    }
+
+    header,
+    header>* {
+        display: none !important;
+    }
+    */
+
+/*
+    .picture,
+    .picture>img {
+        display: none !important;
+    }
+
+}
+*/

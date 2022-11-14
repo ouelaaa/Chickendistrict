@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHICK'& DISTRICT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/w3.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles2.css">
+
+
+</head>
+
+<body onload="load()">
+
+    <!-- Navbar (sit on top)
+    <div class="w3-top barnav">
+        <div class="w3-bar w3-padding w3-card wrapper" style="letter-spacing:4px;">
+            <img class="logo" src="./images/image.png" alt="">
+            <div>
+                <a href="#about" class="w3-bar-item w3-button">À propos de nous</a>
+                <a href="#menu" class="w3-bar-item w3-button">Nos menus</a>
+                <a href="#ou_sommes_nous" class="w3-bar-item w3-button">Où sommes nous ?</a>
+                <a href="#contact" class="w3-bar-item w3-button">Nous contacter</a>
+            </div>
+        </div>
+
+    </div>
+  -->
+    <div class="w3-top barnav">
+        <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px;">
+            <img class="w3-bar-item logo" src="./images/image.png" alt="" onclick="window.location='#home'">
+            <!-- <a href="#home" class="w3-bar-item w3-button">CHICK'& DISTRICT</a> -->
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small nos_button">
+                <div class="container" onclick="myFunction(this,'Barnav')">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <a href="#about" class="w3-bar-item w3-button">À propos de nous</a>
+                <a href="#menu" class="w3-bar-item w3-button">Nos menus</a>
+                <a href="#ou_sommes_nous" class="w3-bar-item w3-button">Où sommes nous ?</a>
+                <a href="#contact" class="w3-bar-item w3-button">Nous contacter</a>
+
+                <div class="blockbarnav nos_button2" id="Barnav" style="letter-spacing:4px;">
+                    <a href="#about" class="w3-bar-item w3-button">À propos de nous</a>
+                    <a href="#menu" class="w3-bar-item w3-button">Nos menus</a>
+                    <a href="#ou_sommes_nous" class="w3-bar-item w3-button">Où sommes nous ?</a>
+                    <a href="#contact" class="w3-bar-item w3-button">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Header -->
+    <header class="w3-display-container w3-wide demo" style="/*max-width:1600px;min-width:500px;*/box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);" id="home">
+        <img class="" src="./images/chicken.jpg" alt="Hamburger Catering">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity" id="section07">
+            <!-- <h1 class="w3-xxlarge">CHICK'& DISTRICT <i class="arrow down"></i></h1> -->
+            <h1 class="w3-xxlarge">
+                CHICK'& DISTRICT<a href="#about"><span></span><span></span><span></span></a>
+            </h1>
+        </div>
+
+    </header>
+
+
+    <br>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:80%">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64 card" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small picture">
+                <img src="./images/vitrine2.jpg" class="w3-round w3-image w3-opacity-min imageOne" alt="Table Setting" width="600" height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large text">
+                <h1 class="w3-center">À propos de CHICK'& DISTRICT</h1><br>
+                <h5 class="w3-center">Le spécialiste du poulet</h5>
+                <p class="w3-large">
+                    Restaurant Fast Food, offrant des repas de qualité, à prix très attractif. Formule sandwichs, buckets tenders, wings, nuggets, salades, boissons. À emporter ou bien en livraison à partir de 15€.
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64 card" id="menu">
+            <div class="w3-col l6 w3-padding-small text">
+                <h1 class="w3-center">Notre carte</h1><br>
+                <h5 class="w3-center" onclick="toggle('Bucket','BucketS')">Chick'& Bucket<span id="BucketS" class="w3-tag w3-green w3-right">Voir +</span></h5>
+
+
+
+                <div id="Bucket">
+                    <h4>TEAM Bucket One</h4>
+                    <p class="w3-text-grey">15 Wings + 5 Tenders + 4 frites + boisson 1,5L
+                        <span class="w3-tag w3-green">20.0 €</span>
+                    </p>
+                    <h4>TEAM Bucket Two</h4>
+                    <p class="w3-text-grey">15 Wings + 10 Nuggets + 4 frites + boisson 1,5L
+                        <span class="w3-tag w3-green">20.0 €</span>
+                    </p>
+                    <h4>TEAM Bucket Three</h4>
+                    <p class="w3-text-grey">25 Wings + 4 frites + boisson 1,5L
+                        <span class="w3-tag w3-green">20.0 €</span>
+                    </p>
+
+                    <h4>TEAM Bucket Four</h4>
+                    <p class="w3-text-grey">15 Wings + 15 Tenders + 4 frites + boisson 1,5L
+                        <span class="w3-tag w3-green">24.0 €</span>
+                    </p>
+                    <h4>TEAM Bucket Five</h4>
+                    <p class="w3-text-grey">20 Tenders + 4 frites + boisson 1,5L
+                        <span class="w3-tag w3-green">23.0 €</span>
+                    </p>
+                    <h4>TEAM Bucket Six</h4>
+                    <p class="w3-text-grey">10 Wings + 10 Tenders + 4 frites + boisson 1,5L
+                        <span class="w3-tag w3-green">20.0 €</span>
+                    </p>
+
+                </div>
+
+                <h5 class="w3-center" onclick="toggle('Sandwich', 'SandwichS')">Chick'& Sandwich<span id="SandwichS" class="w3-tag w3-green w3-right">Voir +</span></h5>
+
+                <div id="Sandwich">
+                    <h4>Extra roll</h4>
+                    <p class="w3-text-grey">Tenders + salade + pomme de terre
+                        <span class="w3-tag w3-green">Boisson + frites 7.50 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.50 €</span>
+                    </p>
+
+                    <h4>Roll</h4>
+                    <p class="w3-text-grey">Tenders + salade
+                        <span class="w3-tag w3-green">Boisson + frites 7.00 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.00 €</span>
+                    </p>
+
+                    <h4>Wrap</h4>
+                    <p class="w3-text-grey">Tenders + salade + chèvre miele
+                        <span class="w3-tag w3-green">Boisson + frites 7.50 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.50 €</span>
+                    </p>
+
+                    <h4>Tacos</h4>
+                    <p class="w3-text-grey">Tenders + frites
+                        <span class="w3-tag w3-green">Boisson + frites 8.00 €</span>
+                        <span class="w3-tag w3-yellow">Seul 7.00 €</span>
+                    </p>
+
+                </div>
+
+                <h5 class="w3-center" onclick="toggle('Carte', 'CarteS')">À la carte<span id="CarteS" class="w3-tag w3-green w3-right">Voir +</span></h5>
+
+                <div id="Carte">
+                    <h4>Extra roll</h4>
+                    <p class="w3-text-grey">Tenders + salade + pomme de terre
+                        <span class="w3-tag w3-green">Boisson + frites 7.50 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.50 €</span>
+                    </p>
+
+                    <h4>Roll</h4>
+                    <p class="w3-text-grey">Tenders + salade
+                        <span class="w3-tag w3-green">Boisson + frites 7.00 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.00 €</span>
+                    </p>
+
+                    <h4>Wrap</h4>
+                    <p class="w3-text-grey">Tenders + salade + chèvre miele
+                        <span class="w3-tag w3-green">Boisson + frites 7.50 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.50 €</span>
+                    </p>
+
+                    <h4>Tacos</h4>
+                    <p class="w3-text-grey">Tenders + frites
+                        <span class="w3-tag w3-green">Boisson + frites 8.00 €</span>
+                        <span class="w3-tag w3-yellow">Seul 7.00 €</span>
+                    </p>
+
+                </div>
+
+                <h5 class="w3-center" onclick="toggle('Salad', 'SaladS')">Chick'& Salad<span id="SaladS" class="w3-tag w3-green w3-right">Voir +</span></h5>
+
+                <div id="Salad">
+                    <h4>Salade tenders</h4>
+                    <p class="w3-text-grey">Blanc de poulet + salade verte + tomates + olives + maïs
+                        <span class="w3-tag w3-green">Boisson + frites 7.00 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.00 €</span>
+                    </p>
+
+                    <h4>Salade Escalope</h4>
+                    <p class="w3-text-grey">Escalope de poulet en morceaux + salade verte + tomates + olives + maïs
+                        <span class="w3-tag w3-green">Boisson + frites 7.00 €</span>
+                        <span class="w3-tag w3-yellow">Seul 6.00 €</span>
+                    </p>
+
+                </div>
+
+                <h5 class="w3-center" onclick="toggle('Drink', 'DrinkS')">Chick'& Drink<span id="DrinkS" class="w3-tag w3-green w3-right">Voir +</span></h5>
+
+                <div id="Drink">
+                    <h4>Canette 33cl</h4>
+                    <p class="w3-text-grey">Coca-cola, Fanta, Oasis, Ice Tea, Orangina
+                        <span class="w3-tag w3-green">1.50 €</span>
+                    </p>
+
+                    <h4>Bouteille</h4>
+                    <p class="w3-text-grey">Coca-cola, Orangina, Ice Tea
+                        <span class="w3-tag w3-green">3.00 €</span>
+                    </p>
+
+                </div>
+
+                <h5 class="w3-center" onclick="toggle('Delivery', 'DeliveryS')">Chick'& Delivery<span id="DeliveryS" class="w3-tag w3-green w3-right">Voir +</span></h5>
+
+                <div id="Delivery">
+                    <h4>Commander en ligne ou se faire livrer</h4>
+                    <p class="w3-text-grey">
+                        <span class="w3-tag" style="background-color: #3c3939 !important; color: #ff8100 !important;" onclick="window.location='tel:0237825279'">02.37.82.52.79</span>
+                        <span class="w3-tag" style="background-color: #06c167 !important; color: black !important;" onclick="window.location='https://www.ubereats.com/fr/store/chicken-district/e-06QjvQWZCtAx3Nu5eBoA'">Commander sur Uber Eat</span>
+                        <span class="w3-tag" style="background-color: #ff8000 !important; color: white !important;" onclick="window.location='https://www.just-eat.fr/en/menu/chicken-district'">Commander sur Just-Eat</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="w3-col l6 w3-padding-large picture">
+                <img src="./images/bucket.jpg" class="w3-round w3-image w3-opacity-min imageTwo" alt="Menu" style="width:100%">
+            </div>
+        </div>
+
+        <br>
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64 card" id="ou_sommes_nous">
+            <div class="w3-col m6 w3-padding-large w3-hide-small picture">
+                <img src="./images/map.png" class="w3-round w3-image w3-opacity-min imageThree" alt="Table Setting" width="600" height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large text">
+                <h1 class="w3-center">Où sommes nous ?</h1><br>
+                <h5 class="w3-center">Le spécialiste du poulet</h5>
+                <p class="w3-large">
+                    Fast food situé à la rue commerciale de la sablonière à Dreux, en face de la gendarmerie.
+                    <br><br>
+                    <span class="w3-tag w3-red">20 Rue de la Sablonnière, 28100 Dreux</span></p>
+                <hr>
+            </div>
+            <div class="w3-col m6 w3-padding-large text">
+                <h1 class="w3-center">Nous contacter</h1><br>
+                <p class="w3-large">
+                    Contactez-nous par téléphone ou bien vous pouvez nous laisser un message.
+                    <span class="w3-tag w3-green" onclick="window.location='tel:0237825279'">02.37.82.52.79</span>
+
+                    <span class="w3-tag w3-green" onclick="window.location='https://accounts.google.com/v3/signin/identifier?dsh=S-1308412918%3A1668186129910740&continue=https%3A%2F%2Fwww.google.fr%2Fsearch%3Fq%3Dchicken%2Bdistrict%2Bdreux%26source%3Dhp%26ei%3DP1ZtY8fMN9WGhbIP95u2sAM%26iflsig%3DAJiK0e8AAAAAY21kT0RxKR6NZdP7bUdbJJpvEeETydkN%26gs_ssp%3DeJzj4tVP1zc0LIovMyopTK40YLRSNagwMU81NDU1SEtOSTNItEw1tjKosDA3MDUzBgoZmaemmqeYeIklZ2QmZ6fmKaRkFpcUZSaXKKQUpZZWAACKOhhe%26oq%3Dchicken%2Bdist%26gs_lcp%3DCgdnd3Mtd2l6EAEYADILCC4QrwEQxwEQgAQyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMggIABAWEB4QCjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOggIABCxAxCDAToOCC4QgAQQsQMQxwEQ0QM6BQgAEIAEOggIABCABBCxAzoLCC4QgAQQsQMQgwE6CAguELEDEIMBOgUILhCABDoICC4QgAQQsQM6DgguEIAEELEDEIMBENQCOgsILhCABBDHARCvAToOCC4QgwEQ1AIQsQMQgAQ6CwguEIAEELEDENQCOhEILhCDARCvARDHARCxAxCABDoRCC4QrwEQxwEQkgMQyQMQgAQ6BQgAELEDUNEIWMgtYN05aAJwAHgBgAHnA4gB3xmSAQkwLjYuNC4xLjKYAQCgAQGwAQA%26sclient%3Dgws-wiz%23lpqa%3Da%252C%252Cd%252C1&hl=fr&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAvTF3gKLjSWlDV6qRipZgjzXtjCAllPwWu75sRgRIInOO2Kf9iqXdW0si5fk8MJhXrglgXM2Qhttps://accounts.google.com/v3/signin/identifier?dsh=S-1308412918%3A1668186129910740&continue=https%3A%2F%2Fwww.google.fr%2Fsearch%3Fq%3Dchicken%2Bdistrict%2Bdreux%26source%3Dhp%26ei%3DP1ZtY8fMN9WGhbIP95u2sAM%26iflsig%3DAJiK0e8AAAAAY21kT0RxKR6NZdP7bUdbJJpvEeETydkN%26gs_ssp%3DeJzj4tVP1zc0LIovMyopTK40YLRSNagwMU81NDU1SEtOSTNItEw1tjKosDA3MDUzBgoZmaemmqeYeIklZ2QmZ6fmKaRkFpcUZSaXKKQUpZZWAACKOhhe%26oq%3Dchicken%2Bdist%26gs_lcp%3DCgdnd3Mtd2l6EAEYADILCC4QrwEQxwEQgAQyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMggIABAWEB4QCjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOggIABCxAxCDAToOCC4QgAQQsQMQxwEQ0QM6BQgAEIAEOggIABCABBCxAzoLCC4QgAQQsQMQgwE6CAguELEDEIMBOgUILhCABDoICC4QgAQQsQM6DgguEIAEELEDEIMBENQCOgsILhCABBDHARCvAToOCC4QgwEQ1AIQsQMQgAQ6CwguEIAEELEDENQCOhEILhCDARCvARDHARCxAxCABDoRCC4QrwEQxwEQkgMQyQMQgAQ6BQgAELEDUNEIWMgtYN05aAJwAHgBgAHnA4gB3xmSAQkwLjYuNC4xLjKYAQCgAQGwAQA%26sclient%3Dgws-wiz%23lpqa%3Da%252C%252Cd%252C1&hl=fr&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAvTF3gKLjSWlDV6qRipZgjzXtjCAllPwWu75sRgRIInOO2Kf9iqXdW0si5fk8MJhXrglgXM2Q'">Envoyer un message</span></p>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- End page content -->
+
+        <br>
+
+        <!-- About Section
+        <div class="w3-row w3-padding-64 card" id="ou_sommes_nous">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="./images/map.png" class="w3-round w3-image w3-opacity-min imageThree" alt="Table Setting" width="600" height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large text">
+                <h1 class="w3-center">Nous contacter</h1><br>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+                    <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                    <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+                </form>
+            </div>
+        </div>
+-->
+
+        <!-- Contact Section
+
+        <div class="w3-container w3-padding-64" id="contact">
+            <div class="w3-col m6 w3-padding-large text">
+
+                <h1>Nous contacter</h1><br>
+                <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+                <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+                    <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                    <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+                </form>
+            </div>
+        </div>
+        -->
+
+
+    </div>
+
+    <!-- Footer -->
+    <div class="w3-bottom footer">
+        <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px;">
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#home" class="w3-bar-item w3-button">CHICK'& DISTRICT</a>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+    <script>
+        var Barnav = document.getElementById("Barnav");
+        var BarnavS = document.getElementById("BarnavS");
+
+        Barnav.style.display = "none";
+
+        function myFunction(x, ID, IDs) {
+            x.classList.toggle("change");
+            var element = document.getElementById(ID);
+            var elementS = document.getElementById(IDs);
+
+            if (element.style.display === "none") {
+                element.style.display = "block";
+
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
